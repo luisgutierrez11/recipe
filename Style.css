@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+:root{
+    --grey: #8080802a;
+    --white: #ffffff;
+    --fondo: #f2c2da91;
+    --brownie: #a52a2ace;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--fondo);
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+}
+
+.recipe{    
+    font-family: "Young Serif", serif;    
+    background-color: var(--white);
+    font-size: 16px;
+    width: 50%;
+    border-radius: 8px;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;    
+}
+#img1{
+    width: 100%;
+}
+#titulo{
+    margin: 0.5em auto 0.5em auto;
+}
+.prep{
+    background-color: rgba(242, 194, 218, 0.254);
+    padding-left: 1.002em;
+    border-radius: 0.3em;
+}
+li::marker{
+    color: var(--brownie);
+}
+ul li::marker{
+    font-size: xx-small;
+}
+.margenDeOrden{
+    margin-left: 1.5em;
+}
+h3,h5{
+    color: var(--brownie);
+}
+h1,h3,h5{
+    font-weight: 400;
+}
+#instructions{
+    border-top: 0.2px solid var(--grey);
+    border-bottom: 0.2px solid var(--grey);
+}
+table{
+    width: 100%;
+    text-align: left;
+}
+td{
+    border-bottom: solid 0.2px var(--grey);
+}
+.colorAtri{
+    color: var(--brownie);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (max-width: 480px){
+   body{
+    margin: 0;
+    padding: 0;
+   }
+   main{
+    margin: 0;
+    padding: 0;
+   }
+   .recipe{
+    margin: 0;
+    width: 100%;
+    border-radius: 0;
+    padding: 0;
+   }
+   footer{
+    background-color: white;
+   }
+   #img1{
+    position: relative;
+    left: 0;
+   }
+   .adjust{
+    padding: 16px;
+   }
+}
